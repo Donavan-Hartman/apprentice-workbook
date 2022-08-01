@@ -6,4 +6,10 @@
 
 // Return True or False in every situation
 module.exports = (customerMoney, isMovieFull, rating, age, isParentWith) => {
-};
+    if (customerMoney >= 8 && !isMovieFull){
+        if (rating != "R" || age >= 17 || isParentWith) {
+            return true;
+            }
+        }
+    return false;
+}
